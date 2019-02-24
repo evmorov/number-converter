@@ -1,0 +1,194 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_black"
+    android:orientation="vertical"
+    tools:context=".NSActivity" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_marginBottom="2dp"
+        android:layout_weight="47" >
+
+        <TableRow style="@style/NumeralSystemRow" >
+
+            <TextView
+                android:id="@+id/field_name_dec"
+                style="@style/FieldName"
+                android:layout_weight="0.14"
+                android:text="Dec" />
+
+            <com.poorsquirrel.numberconverter.numeralsystem.NSEditText
+                android:id="@+id/field_dec"
+                style="@style/NumberField"
+                android:layout_weight="0.86" />
+        </TableRow>
+
+        <TableRow style="@style/NumeralSystemRow" >
+
+            <TextView
+                android:id="@+id/field_name_bin"
+                style="@style/FieldName"
+                android:layout_weight="0.14"
+                android:text="Bin" />
+
+            <com.poorsquirrel.numberconverter.numeralsystem.NSEditText
+                android:id="@+id/field_bin"
+                style="@style/NumberField"
+                android:layout_weight="0.86" />
+        </TableRow>
+
+        <TableRow style="@style/NumeralSystemRow" >
+
+            <TextView
+                android:id="@+id/field_name_oct"
+                style="@style/FieldName"
+                android:layout_weight="0.14"
+                android:text="Oct" />
+
+            <com.poorsquirrel.numberconverter.numeralsystem.NSEditText
+                android:id="@+id/field_oct"
+                style="@style/NumberField"
+                android:layout_weight="0.86" />
+        </TableRow>
+
+        <TableRow style="@style/NumeralSystemRow" >
+
+            <TextView
+                android:id="@+id/field_name_hex"
+                style="@style/FieldName"
+                android:layout_weight="0.14"
+                android:text="Hex" />
+
+            <com.poorsquirrel.numberconverter.numeralsystem.NSEditText
+                android:id="@+id/field_hex"
+                style="@style/NumberField"
+                android:layout_weight="0.86" />
+        </TableRow>
+    </TableLayout>
+
+    <!-- Keyboard -->
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="53"
+        android:stretchColumns="*" >
+
+        <TableRow style="@style/ButtonRow" >
+
+            <Button
+                android:id="@+id/key_1"
+                style="@style/Button.Number"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/key_2"
+                style="@style/Button.Number"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/key_3"
+                style="@style/Button.Number"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/key_A"
+                style="@style/Button.Letter"
+                android:text="A" />
+
+            <Button
+                android:id="@+id/key_B"
+                style="@style/Button.Letter"
+                android:text="B" />
+
+            <Button
+                android:id="@+id/key_C"
+                style="@style/Button.Letter"
+                android:text="C" />
+        </TableRow>
+
+        <TableRow style="@style/ButtonRow" >
+
+            <Button
+                android:id="@+id/key_4"
+                style="@style/Button.Number"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/key_5"
+                style="@style/Button.Number"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/key_6"
+                style="@style/Button.Number"
+                android:text="6" />
+
+            <Button
+                android:id="@+id/key_D"
+                style="@style/Button.Letter"
+                android:text="D" />
+
+            <Button
+                android:id="@+id/key_E"
+                style="@style/Button.Letter"
+                android:text="E" />
+
+            <Button
+                android:id="@+id/key_F"
+                style="@style/Button.Letter"
+                android:text="F" />
+        </TableRow>
+
+        <TableRow style="@style/ButtonRow" >
+
+            <Button
+                android:id="@+id/key_7"
+                style="@style/Button.Number"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/key_8"
+                style="@style/Button.Number"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/key_9"
+                style="@style/Button.Number"
+                android:text="9" />
+
+            <Button
+                android:id="@+id/key_0"
+                style="@style/Button.Number"
+                android:text="0" />
+
+            <LinearLayout android:layout_span="2"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/key_separator"
+                    style="@style/Button.Number"
+                    android:layout_width="0px"
+                    android:layout_weight="0.66"
+                    android:text="." />
+
+                <Button
+                    android:id="@+id/key_clear_all"
+                    style="@style/Button.Clear"
+                    android:layout_width="0px"
+                    android:layout_weight="0.66"
+                    android:text="CE" />
+
+                <ImageButton
+                    android:id="@+id/key_backspace"
+                    style="@style/Button.Backspace"
+                    android:layout_width="0px"
+                    android:layout_weight="0.66" />
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
